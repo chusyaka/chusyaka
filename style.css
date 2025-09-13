@@ -1,0 +1,242 @@
+    html, body {
+        scroll-behavior: smooth;
+    }
+    
+    ul {
+        text-align:left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        margin-left: 25%;
+        letter-spacing: 0.04cm;
+}
+    p {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin-right: 15%;
+        margin-left: 15%;
+        letter-spacing: 0.04cm;
+    }
+    h3 {
+        font-size: 21px;
+    }
+     #pic {
+    float: left; /*  */
+   }
+body {
+    background-color: beige;
+}
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+}
+h2{
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 40px;
+}
+div{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+ .righttext{
+    margin-left: 1000px;
+     margin-right: 470px;
+      margin-top: 1px;
+}
+.obr {
+    text-align: center;
+    margin-top: 0.2%;
+}
+.checkbox{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 0.1%
+}
+.button{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 0.8%;
+}
+.coperight{
+    margin-left: -76%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:large;
+    margin-top: 2%;
+}
+.pokaz{
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 40px;
+     margin-top: 3%;
+}
+.text{
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 20px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+.vn{
+     text-align: left;
+     font-family: 'Times New Roman';
+     font-size: 27px;
+}
+.forma{
+    font-size: 24px;
+    letter-spacing: 0.3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.pic{
+    margin-left: -40px;
+}
+nav ul {
+    list-style: none;
+    margin-top: -10px;
+}
+nav li {
+    display: inline-block;
+    margin-right: 120px;
+    margin-top: 35px;
+}
+.li1 {
+    margin-right: 120px;
+    margin-left: -150px;
+}
+.li2 {
+    margin-right: 120px;
+
+}
+.li3 {
+    margin-right: 120px;
+}
+.li4 {
+    margin-right: 120px;
+}
+nav {
+    position:sticky;
+}
+.bez {
+    text-decoration: none; color: black;
+    transition:color 0.3s;
+}
+.bez:hover {
+    color: darkgray;
+}
+.header {
+    width: 1907px;
+    height: 100px;
+    background-color: rgb(128, 128, 128);
+    margin-left: -10px;
+    margin-right: -10px;
+    border: 5px;
+    border-radius: 15px;
+}
+.banner {
+    background-image: url(https://i.pinimg.com/1200x/89/30/ef/8930ef8a1cdc5aac69a8791840bc75e3.jpg);
+    border: 5px;
+    object-fit: contain;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    width: 1400px;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bannertext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-left: 700px;
+    padding-top: 90px;
+}
+.pok {
+    color: white;
+    padding-top: 30px;
+}
+.banner2 {
+    background-image: url(https://i.pinimg.com/1200x/56/5a/e6/565ae62e7a980cc94865b8071e5eee9f.jpg);
+    border: 5px;
+    object-fit: contain;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    width: 1200px;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bannertext2 {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+    padding-top: 300px;
+}
+.pok2 {
+    color: white;
+    padding-top: 20px;
+}
+.pervi {
+    margin-left: auto; margin-right: auto;
+}
+.razm {
+    width: 700px;
+    height: 400px;
+}
+.banner3 {
+    background-image: url(https://i.pinimg.com/1200x/85/c4/94/85c49433adb1cba38d2c189a68547757.jpg);
+    border: 5px solid grey;
+    object-fit: contain;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+   background-size: contain;
+      width: 600px;
+   height: 400px;
+   margin-left: auto;
+   margin-right: auto;
+   overflow: hidden;
+}
+.cartochka {
+    border: 5px solid grey;
+    object-fit: contain;
+    border-radius: 15px;
+    width: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.geo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.cena {
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button2 {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.geobasket {
+    width: 300px;
+    height: 350px;
+}
