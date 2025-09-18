@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+     <link href="style5.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <div class="calculator">
+            <input class="input" type="text" id="display" readonly/>
+            <div class="buttons">
+                <button onclick="but('7')" class="but">7</button>
+                <button onclick="but('8')" class="but">8</button>
+                <button onclick="but('9')" class="but">9</button>
+                <button onclick="setOperation('/')" class="butor">/</button>
+                <button onclick="but('4')" class="but">4</button>
+                <button onclick="but('5')" class="but">5</button>
+                <button onclick="but('6')" class="but">6</button>
+                <button onclick="setOperation('*')" class="butor">*</button>
+                <button onclick="but('1')" class="but">1</button>
+                <button onclick="but('2')" class="but">2</button>
+                <button onclick="but('3')" class="but">3</button>
+                <button onclick="setOperation('-')" class="butor">-</button>
+                <button onclick="but('.')" class="but">.</button>
+                <button onclick="but('0')" class="but">0</button>
+                <button onclick="but('( )')" class="but">( )</button>
+                <button onclick="setOperation('+')" class="butor">+</button>
+                <button onclick="clearDisplay()" class="butor">C</button>
+                <button onclick="calculate()" class="butor">=</button>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="scripts5.js"></script>
+</body>
+</html>
