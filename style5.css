@@ -1,0 +1,41 @@
+.calculator {
+    background-color: black;
+    width: 500px;
+    height: 700px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: auto;
+}
+.buttons {
+    padding: 15px;
+    margin: auto;
+}
+.input {
+    background-color: gray;
+    border: 1px;
+    border-radius: 15px;
+    width: 450px;
+    height: 100px;
+    margin-left: 22px;
+    margin-top: 20px;
+}
+.but {
+    border: 1px;
+    background-color: rgb(73, 72, 72);
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    margin: 5px;
+    font-size: 30px;
+}
+.butor {
+    border: 1px;
+    background-color: orange;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    margin: 5px;
+    font-size: 30px;
+}
