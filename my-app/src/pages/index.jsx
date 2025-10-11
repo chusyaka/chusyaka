@@ -1,25 +1,38 @@
-import { useState } from "react";
-import Button from "../components/button";
-import Display from "../components/display";
+import React, { useState, useEffect } from "react";
+import WriteToUs from "../feature/writeToUs";
+import ContactInfo from "../feature/contact-info";
 
 function Home() {
-  const [value, setValue] = useState("");
-  const handleClick = (event) => {
-    const newValue = value + event.target.textContent;
-    setValue(newValue);
-  };
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [showInfoMessage, setShowInfoMessage] = useState(false);
+
+  useEffect(() => {
+    if (showInfoMessage === true) {
+      setTimeout(() => {
+        setShowInfoMessage(false);
+      }, 3000);
+    }
+  }, [showInfoMessage]);
+
   return (
     <div>
-      <Display value={value} />
-      <Button text="1" backgroundColor="red" onClick={handleClick} />
-      <Button text="2" onClick={handleClick} />
-      <Button text="3" onClick={handleClick} />
-      <Button text="4" />
-      <Button text="5" backgroundColor="green" onClick={handleClick} />
-      <Button text="6" onClick={handleClick} />
-      <Button text="7" onClick={handleClick} />
-      <Button text="8" />
-      <Button text="9" />
+      <h1>Контакты</h1>
+      <div className="home-page" style={{ display: "flex", gap: "20px" }}>
+        <WriteToUs
+          setName={setName}
+          setEmail={setEmail}
+          setMessage={setMessage}
+          setShowInfoMessage={setShowInfoMessage}
+        />
+        <ContactInfo
+          name={name}
+          email={email}
+          message={message}
+          showInfoMessage={showInfoMessage}
+        />
+      </div>
     </div>
   );
 }
