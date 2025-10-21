@@ -1,136 +1,106 @@
-import React, { useState } from "react";
-import "./style.css";
+import React, { useState } from 'react';
+import CalculatorButton from '../buttons';
+import './style.css';
 
 function Calculate() {
-    const [display, setDisplay] = useState("0");
-    const [previousValue, setPreviousValue] = useState(null);
-    const [operation, setOperation] = useState(null);
-    const [waitingForNewValue, setWaitingForNewValue] = useState(false);
+  const [display, setDisplay] = useState('0');
+  const [firstValue, setFirstValue] = useState(null);
+  const [operator, setOperator] = useState(null);
+  const [waitingForSecondValue, setWaitingForSecondValue] = useState(false);
 
-    const inputNum = (num) => {
-        if (waitingForNewValue) {
-            setDisplay(String(num));
-            setWaitingForNewValue(false);
-        } else {
-            setDisplay(display === "0" ? String(num) : display + num);
-        }
-    };
+  const inputNumber = (num) => {
+    if (waitingForSecondValue) {
+      setDisplay(String(num));
+      setWaitingForSecondValue(false);
+    } else {
+      setDisplay(display === '0' ? String(num) : display + num);
+    }
+  };
 
-    const inputDot = () => {
-        if (waitingForNewValue) {
-            setDisplay("0.");
-            setWaitingForNewValue(false);
-            return;
-        }
+  const inputOperator = (nextOperator) => {
+    const inputValue = parseFloat(display);
 
-        if (!display.includes(".")) {
-            setDisplay(display + ".");
-        }
-    };
+    if (firstValue === null) {
+      setFirstValue(inputValue);
+    } else if (operator) {
+      const result = calculate(firstValue, inputValue, operator);
+      setDisplay(String(result));
+      setFirstValue(result);
+    }
 
-    const clear = () => {
-        setDisplay("0");
-        setPreviousValue(null);
-        setOperation(null);
-        setWaitingForNewValue(false);
-    };
+    setWaitingForSecondValue(true);
+    setOperator(nextOperator);
+  };
 
-    const performOperation = (nextOperation) => {
-        const inputValue = parseFloat(display);
+  const calculate = (first, second, operator) => {
+    switch (operator) {
+      case '+':
+        return first + second;
+      case '-':
+        return first - second;
+      case '*':
+        return first * second;
+      case '/':
+        return first / second;
+      default:
+        return second;
+    }
+  };
 
-        if (previousValue === null) {
-            setPreviousValue(inputValue);
-        } else if (operation) {
-            const currentValue = previousValue || 0;
-            const newValue = calculate(currentValue, inputValue, operation);
+  const handleEquals = () => {
+    const inputValue = parseFloat(display);
+    
+    if (firstValue !== null && operator) {
+      const result = calculate(firstValue, inputValue, operator);
+      setDisplay(String(result));
+      setFirstValue(null);
+      setOperator(null);
+      setWaitingForSecondValue(true);
+    }
+  };
 
-            setDisplay(String(newValue));
-            setPreviousValue(newValue);
-        }
+  const clear = () => {
+    setDisplay('0');
+    setFirstValue(null);
+    setOperator(null);
+    setWaitingForSecondValue(false);
+  };
 
-        setWaitingForNewValue(true);
-        setOperation(nextOperation);
-    };
-
-    const calculate = (firstValue, secondValue, operation) => {
-        switch (operation) {
-            case "+":
-                return firstValue + secondValue;
-            case "-":
-                return firstValue - secondValue;
-            case "*":
-                return firstValue * secondValue;
-            case "/":
-                return firstValue / secondValue;
-            default:
-                return secondValue;
-        }
-    };
-
-    const equals = () => {
-        const inputValue = parseFloat(display);
-
-        if (previousValue !== null && operation) {
-            const newValue = calculate(previousValue, inputValue, operation);
-            setDisplay(String(newValue));
-            setPreviousValue(null);
-            setOperation(null);
-            setWaitingForNewValue(true);
-        }
-    };
-
-    const but = (e) => {
-        const value = e.target.textContent;
-        
-        if (value === ".") {
-            inputDot();
-        } else {
-            inputNum(value);
-        }
-    };
-
-    const opertator = (e) => {
-        const value = e.target.textContent;
-        performOperation(value);
-    };
-
-    const eq = () => {
-        equals();
-    };
-
-    return (
-        <div className="vse">
-            <input 
-                type="text" 
-                value={display} 
-                className="display" 
-                readOnly 
-            />
-            <div className="blockCalc">
-                <button onClick={but} className="but">1</button>
-                <button onClick={but} className="but">2</button>
-                <button onClick={but} className="but">3</button>
-                <button onClick={opertator} className="but">+</button>
-                
-                <button onClick={but} className="but">4</button>
-                <button onClick={but} className="but">5</button>
-                <button onClick={but} className="but">6</button>
-                <button onClick={opertator} className="but">-</button>
-                
-                <button onClick={but} className="but">7</button>
-                <button onClick={but} className="but">8</button>
-                <button onClick={but} className="but">9</button>
-                <button onClick={opertator} className="but">*</button>
-                
-                <button onClick={but} className="but">0</button>
-                <button onClick={but} className="but">.</button>
-                <button onClick={eq} className="but">=</button>
-                <button onClick={opertator} className="but">/</button>
-                
-                <button onClick={clear} className="clear">C</button>
-            </div>
+  return (
+    <div className="calculator">
+      <div className="display">{display}</div>
+      
+      <div className="buttons">
+        <div className="row">
+          <CalculatorButton value="7" onClick={inputNumber} />
+          <CalculatorButton value="8" onClick={inputNumber} />
+          <CalculatorButton value="9" onClick={inputNumber} />
+          <CalculatorButton value="/" onClick={inputOperator} />
         </div>
-    );
+        
+        <div className="row">
+          <CalculatorButton value="4" onClick={inputNumber} />
+          <CalculatorButton value="5" onClick={inputNumber} />
+          <CalculatorButton value="6" onClick={inputNumber} />
+          <CalculatorButton value="*" onClick={inputOperator} />
+        </div>
+        
+        <div className="row">
+          <CalculatorButton value="1" onClick={inputNumber} />
+          <CalculatorButton value="2" onClick={inputNumber} />
+          <CalculatorButton value="3" onClick={inputNumber} />
+          <CalculatorButton value="-" onClick={inputOperator} />
+        </div>
+        
+        <div className="row">
+          <CalculatorButton value="0" onClick={inputNumber} />
+          <CalculatorButton value="C" onClick={clear} />
+          <CalculatorButton value="=" onClick={handleEquals} />
+          <CalculatorButton value="+" onClick={inputOperator} />
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Calculate;
