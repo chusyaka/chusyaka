@@ -1,0 +1,69 @@
+.h1 {
+    width: 121px;
+    height: 25px;
+    margin-top: 57px;
+    margin-left: 411px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 2.31px;
+    color: #48555B;
+}
+.story {
+    margin-top: 58px;
+    width: 941px;
+    height: 344px;
+    display: block;
+    margin: 0 auto;
+}
+.founted {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.19px;
+    vertical-align: bottom;
+    width: 405.07623291015625px;
+    height: 81px;
+    margin-top: 82px;
+    color: #48555B;
+}
+.line {
+    border: 2px #00A4E5;
+    width: 50px;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.lorem {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.19px;
+    vertical-align: middle;
+    width: 405.07623291015625px;
+    height: 115px;
+}
+.plan {
+    float: right;
+width: 140px;
+height: 224px;
+margin-top: 86px;
+}
+.manage {
+width: 140px;
+height: 224px;
+float: right;
+margin-top: 86px;
+margin-left: 19px;
+}
+.deliver {
+    width: 140px;
+height: 224px;
+float: right;
+margin-top: 86px;
+margin-left: 19px;
+}
