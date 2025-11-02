@@ -10,7 +10,7 @@ function Our() {
                     <img className="line2" src="/Line.png" alt="line" />
                 </p>
                 <p className="lorem2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
-                <img className="all" src="/all-services-btn.png" alt="all" />
+                <button className="all">ALL SERVICES</button>
             </div>
             <div className="bitmap">
                 <div className="proj">

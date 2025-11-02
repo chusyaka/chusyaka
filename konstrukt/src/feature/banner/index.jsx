@@ -11,7 +11,7 @@ function Bunner() {
             <p className="scroll">SCROLL DOWN</p>
             </div>
             <div className="menu">
-                <img className="logo" src="/projeco-logo-black.png" alt="header" />
+                <img className="logo" src="/projeco-logo-black.png" alt="logo" />
             <ul className="ul">
                 <li className="li">HOME</li>
                 <li className="li">ABOUT</li>
