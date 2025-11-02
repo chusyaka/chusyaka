@@ -27,7 +27,7 @@
     left: 881px;
     top: 240px;
     border: none;
-    background-image: url('C:\Users\kiril\OneDrive\Desktop\chusyaka\konstrukt/public/contact-btn.png');
+    background-image: url('../../../public/contact-btn.png');
 }
 .sign {
     background-color: #171819;
