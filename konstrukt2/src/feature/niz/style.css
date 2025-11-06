@@ -1,0 +1,10 @@
+.niz {
+    background-color: #141A20;
+    width: 100%;
+    text-align: left;
+    height: 60px;
+}
+.copy {
+    display: flex;
+    justify-content: center;
+}
