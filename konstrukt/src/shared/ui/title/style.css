@@ -1,0 +1,38 @@
+.title {
+    position: relative;
+    padding-bottom: 10px;
+}
+.title_center {
+    text-align: center;
+}
+.title_left {
+    text-align: left;
+}
+.title_right {
+    text-align: right;
+}
+
+.h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: #48555B;
+}
+
+.title__line {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #00A4E5;
+}
+.title_center .title__line {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.title_left .title__line {
+    left: 0;
+}
+.title_right .title__line {
+    right: 0;
+}

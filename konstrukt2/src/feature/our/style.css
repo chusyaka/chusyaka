@@ -107,7 +107,7 @@ margin-top: 10px;
     vertical-align: middle;
     color: #48555B;
     margin-top: 13px;
-}
+    }
 .projtext {
     margin-top: 13px;
 }
@@ -115,11 +115,6 @@ margin-top: 10px;
     width: 65px;
     height: 75px;
 }
-
-
-
-
-/*  примеры стиля  */
 
 .bitMap {
     display: flex;
@@ -133,6 +128,4 @@ margin-top: 10px;
 .bitMap__sevice {
     padding: 40px 20px;
     width: calc((100% - (28px * 2)) / 3);
-    /* высоту не используем */
-    /* height: 100px; */
 }

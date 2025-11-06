@@ -1,0 +1,106 @@
+.banner2 {
+    width: 1440px;
+    height: 499px;
+    display: block;
+    margin: 0 auto;
+}
+.ban2 {
+    position: relative;
+}
+.want {
+    position: absolute;
+    left: 805px;
+    top: 120px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    vertical-align: middle;
+    color: #48555B;
+    text-align: center;
+}
+.but {
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    left: 881px;
+    top: 240px;
+    border: none;
+    background-image: url('../../../public/contact-btn.png');
+}
+.sign {
+    background-color: #171819;
+    width: 1440px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.footer {
+    background-color: #141A20;
+    width: 1440px;
+    height: 240px;
+    margin: 0 auto;
+    position: relative;
+}
+.otpr {
+    position: absolute;
+    width: 685px;
+    height: 40px;
+    top: 29px;
+}
+.new {
+    position: absolute;
+    width: 216px;
+    height: 30px;
+    color: #FFFFFF;
+    margin-left: 378px;
+    margin-top: 34px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0.85px;
+    vertical-align: bottom;
+}
+.input {
+    position: absolute;
+    margin-left: 664px;
+    margin-top: 30px;
+    width: 250px;
+    height: 40px;
+    border: 1px solid #979797;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.07px;
+    vertical-align: bottom;
+    padding-left: 16px;
+}
+.input::placeholder {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.07px;
+    vertical-align: bottom;
+    color: #48555B;
+}
+.signup {
+    width: 150px;
+    height: 44px;
+    margin-left: 934px;
+    margin-top: 30px;
+    background-color: #00A4E5;
+    border: 1px solid #00A4E5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 0.05px;
+    vertical-align: bottom;
+}
+
